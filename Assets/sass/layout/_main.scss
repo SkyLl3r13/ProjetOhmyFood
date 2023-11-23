@@ -1,0 +1,171 @@
+main {
+    & #hautdepage {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 332px;
+        border: 3px $color-homepage-hautdepage solid;
+        background-color: $color-homepage-hautdepage;
+        margin-top: 10px;
+
+        @include tablet {
+            height: 270px;
+            margin: auto;
+        }
+
+
+        & .mapMarker {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 102%;
+            height: 50px;
+            border: 3px $color-homepage-localisation;
+            border-top: 3px $color-homepage-border-top solid;
+            background-color: $color-homepage-localisation;
+            margin-top: -2px;
+
+            @include tablet {
+                width: 100.3%;
+            }
+        }
+
+        & .fa-location-dot {
+            padding-right: 15px;
+        }
+
+
+        h2 {
+            margin: 40px 50px 0px 50px;
+        }
+
+    }
+
+    & .FonctionnementRest {
+        margin: 55px 0 55px 0;
+
+        @include desktop {
+            width: 100%;
+            height: 500px;
+            background-color: $color-section;
+            border-radius: 20px;
+
+        }
+
+        & h2 {
+            margin-left: 20px;
+
+            @include tablet {
+                text-align: center;
+            }
+        }
+
+        & ol {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 290px;
+            padding-left: 0px;
+            list-style: none;
+            counter-reset: li;
+
+            @include desktop {
+                height: 400px;
+                margin-top: 45px;
+                justify-content: space-around;
+            }
+
+            & li {
+                display: flex;
+                align-items: center;
+                border: 1px $color-homepage-hautdepage solid;
+                background: $color-homepage-hautdepage;
+                box-shadow: 0.25rem 0.25rem 0.5rem rgb(0 0 0 / 13%);
+                border-radius: 20px;
+                height: 80px;
+                width: 90%;
+                counter-increment: li;
+
+                @include tablet {
+                    width: 70%;
+                }
+
+                @include desktop {
+                    width: 85%;
+                    background-color: white;
+                    font-size: 1.5em;
+                }
+
+                &:hover {
+                    background: lighten($violet-primaire, 36);
+
+                    .fa-mobile-screen-button,
+                    .fa-list,
+                    .fa-store {
+                        color: $violet-primaire;
+                    }
+                }
+
+                &::before {
+
+                    content: counter(li);
+                    color: white;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                    background-color: #9356DC;
+                    border-radius: 50%;
+                    padding: 5px 4px 5px 10px;
+                    font-size: 1em;
+
+                    @include desktop {
+                        padding-right: 0px;
+                    }
+
+                }
+
+                & a {
+                    text-decoration: none;
+                    color: black;
+                    font-weight: bold;
+                    display: block;
+                    width: 280px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+
+                    @include tablet {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+
+        & .fa-mobile-screen-button,
+        & .fa-list,
+        & .fa-store {
+            color: $color-icon-nav;
+        }
+    }
+
+    & .image_menu {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        position: absolute;
+        margin-top: -200px;
+
+        @include tablet {
+            height: 15rem;
+        }
+
+        @include desktop {
+            height: 32rem;
+            margin-top: 10px;
+            max-width: 1279px;
+        }
+    }
+}

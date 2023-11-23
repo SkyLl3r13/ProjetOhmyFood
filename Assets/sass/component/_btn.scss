@@ -41,5 +41,40 @@
     overflow: hidden;
     position: relative;
 
+    .full-heart {
+        position: absolute;
+        right: 12px;
+        top: 6px;
+        background: -webkit-gradient(linear, left top, left bottom, from($violet-primaire), to($rose-secondaire));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        font-size: 1em;
+    }
+
+    .empty-heart {
+        position: absolute;
+        right: 6px;
+        top: 0px;
+    }
+
+    /* Après animation */
+
+
+    &:focus {
+        .full-heart {
+            opacity: 1;
+            font-size: 2em;
+            right: 6px;
+            top: 0px;
+            transition-duration: .60s;
+        }
+
+        .empty-heart {
+            transition-duration: 1s;
+            opacity: 0;
+        }
+    }
+
 
 }

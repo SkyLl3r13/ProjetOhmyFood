@@ -12,12 +12,4 @@ body {
         font-family: 'Shrikhand', sans-serif;
     }
 
-    main {
-        margin-top: -10px;
-
-        @include desktop {
-            display: flex;
-            justify-content: space-between;
-        }
-    }
 }
