@@ -1,0 +1,11 @@
+%underline-title-menu {
+    border-bottom: 3px $aqua-tertiaire solid;
+    height: 30px;
+    width: 43px;
+
+    @include desktop {
+        height: 35px;
+    }
+}
+
+// @extend pour appeler le placeholder

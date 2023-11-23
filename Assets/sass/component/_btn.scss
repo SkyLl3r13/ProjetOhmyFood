@@ -1,0 +1,45 @@
+.btn {
+
+    background: linear-gradient(to bottom right, $rose-secondaire, $violet-primaire);
+    color: white;
+    padding: 17px 43px;
+    border-radius: 60px;
+    border: none;
+    display: block;
+    font-size: 1.1rem;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
+    margin: 30px auto -30px;
+
+
+    &:hover {
+        opacity: 0.8;
+        background: linear-gradient(to right bottom, lighten($rose-secondaire, 5), lighten($violet-primaire, 5));
+        box-shadow: 0.25rem 0.25rem 10px rgb(255 121 218 / 45%);
+    }
+}
+
+.btn-homepage {
+
+    white-space: nowrap;
+    margin-top: 50px;
+    padding: 17px 20px;
+
+    @include tablet {
+        font-size: 1em;
+        padding: 17px 43px;
+    }
+}
+
+.btn-heart {
+
+    border: none;
+    background-color: transparent;
+    width: 45px;
+    height: 34px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+
+}

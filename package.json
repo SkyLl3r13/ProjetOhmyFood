@@ -1,0 +1,14 @@
+{
+  "name": "p4_ohmyfood",
+  "version": "1.0.0",
+  "description": "P4_Ohmyfood",
+  "scripts": {
+    "sass": "sass --watch Assets/sass/init.scss:Assets/css/init.css --no-source-map",
+    "prefix": "postcss Assets/css/init.css --use autoprefixer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}

@@ -1,0 +1,12 @@
+@mixin card {
+    background-color: white;
+    height: 70px;
+    margin: 15px 15px 0 15px;
+    border-radius: 20px;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+
+    @include desktop {
+        width: 50%;
+        margin: $margin15 auto;
+    }
+}
