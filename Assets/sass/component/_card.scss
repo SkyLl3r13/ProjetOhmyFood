@@ -51,7 +51,7 @@
 
 
 
-    img {
+    & img {
         border-radius: 20px 20px 0px 0px;
         width: 100%;
         height: 174px;
@@ -62,14 +62,14 @@
         }
     }
 
-    .card-body {
+    & .card-body {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0 $margin15;
     }
 
-    .card-title {
+    & .card-title {
         line-height: 25px;
         margin-top: 12px;
 
